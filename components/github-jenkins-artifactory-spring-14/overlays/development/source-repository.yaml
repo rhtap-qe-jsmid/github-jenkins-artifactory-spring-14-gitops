@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: github-jenkins-artifactory-spring-14-repository
+spec:
+  url: https://github.com/rhtap-qe-jsmid/github-jenkins-artifactory-spring-14

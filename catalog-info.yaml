@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: github-jenkins-artifactory-spring-14-gitops
+  description: This is GitOps manifest for github-jenkins-artifactory-spring-14   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: github-jenkins-artifactory-spring-14
+    backstage.io/kubernetes-id: github-jenkins-artifactory-spring-14 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: github-jenkins-artifactory-spring-14-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:github-jenkins-artifactory-spring-14
